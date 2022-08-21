@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body
+        {
+            background-color: rgb(59, 59, 59);
+            color: rgb(224, 238, 255);
+            font-family: Verdana;
+        }
+        strong
+        {
+            color: aquamarine;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujando con Canvas</title>
+</head>
+<body>
+    <h1>Dibujo en <strong>Canvas</strong></h1>
+    <p>¿Cuantas lineas quieres dibujar?
+        <input type="text" id="cantidad_de_lineas"/> <br>
+        ¿Qué color quieres elegir?
+        <input type="color" value="#FFFFFF" id="colorin"/>
+        <input type="button" value="Dale!" id="botoncito"/>
+    </p>
+    <canvas width="600" height="600" id="dibujito"></canvas>
+    <p>Asi es <strong>Dibujar</strong> en <strong>Canvas</strong></p>
+    <script src="pruebadibujo.js"></script>
+</body>
+</html>

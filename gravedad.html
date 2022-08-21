@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tu peso en otro Planeta </title>
+        <style>
+            body
+            {
+                background-color: rgb(0, 33, 82);
+                color: aliceblue;
+                font-family: verdana;
+            }
+            strong
+            {
+                color: greenyellow;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1> Tu peso en otro Planeta </h1>
+        <p> En la Tierra pesas distinto que en Marte o en Jupiter </p>
+
+        <script>
+            var gravedad_tierra = 9.8;
+            var gravedad_marte = 3.7;
+            var gravedad_jupiter = 24.8;
+            var peso_personal = prompt("¿Cual es tu peso? (En Kg)");
+            var peso_personal_tierra;
+            var peso_personal_marte;
+            var peso_personal_jupiter;
+
+            peso_personal_tierra = peso_personal;
+            peso_personal_marte = peso_personal * gravedad_marte / gravedad_tierra;
+            peso_personal_jupiter = peso_personal * gravedad_jupiter / gravedad_tierra;
+            peso_personal_tierra= parseFloat(peso_personal_tierra).toFixed(2);
+            peso_personal_marte= parseFloat(peso_personal_marte).toFixed(2);
+            peso_personal_jupiter= parseFloat(peso_personal_jupiter).toFixed(2);
+
+            document.write ("<br>Tu peso en la <strong>Tierra</strong> es: <strong>"  +  peso_personal_tierra + " Kg</strong> ");
+            document.write ("<br>Tu peso en <strong>Marte</strong> es: <strong>"  +  peso_personal_marte + " Kg</strong> "); 
+            document.write ("<br>Tu peso en <strong>Jupiter</strong> es: <strong>"  +  peso_personal_jupiter + " Kg</strong>"); 
+        </script>
+    </body>
+
+</html> 
